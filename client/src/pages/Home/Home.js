@@ -9,14 +9,11 @@ class Home extends Component {
 
   state = {
     loggedIn: false,
-
   };
 
   componentDidMount() {
-
     this.loggedIn();
   }
-
 
 
   loggedIn = () => {
@@ -36,7 +33,7 @@ class Home extends Component {
       <div className="homeBox">
         
         {this.state.loggedIn ? (
-          <Button color="warning" block>Play!</Button>
+          <Button color="warning" href="/play" block>Play!</Button>
         ) : (<></>)}
       </div>
     );
