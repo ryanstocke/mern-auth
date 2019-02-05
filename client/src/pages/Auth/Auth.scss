@@ -1,13 +1,17 @@
 @import "../../sass/variable.scss";
 
 .authBox {
+    color:black;
     padding-top: 75px;
     margin: 0 auto;
     width: 300px;
     font-family: $text-font;
+    text-shadow: 0px 0 darkslategrey, 0 1px darkslategrey, 0px 0 darkslategrey, 0 0px darkslategrey;
 
     .loginTitle {
         text-align: center;
+        color: black;
+        text-shadow: 0px 0 black, 0 1px black, 0px 0 black, 0 0px black;
     }
 
     .signupLink {
@@ -17,6 +21,7 @@
 
     .title-font {
         font-family: $title-font;
+        
     }
 
     #loginBtn {

@@ -59,7 +59,7 @@ class Signup extends Component {
     render() {
         return (
             <div>
-                <h2 className="loginTitle title-font">Signup</h2>
+                <h2 className="loginTitle title-font">Sign Up</h2>
                 <hr />
                 {this.props.message?(
                     <Alert className="animated fadeIn" color="danger">{this.props.message}</Alert>
