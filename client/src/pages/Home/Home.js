@@ -31,9 +31,9 @@ class Home extends Component {
   render() {
     return (
       <div className="homeBox">
-        
+        <div className='landingPage'>TEST</div>
         {this.state.loggedIn ? (
-          <Button color="warning" href="/play" block>Play!</Button>
+          <Button color="success" href="/play" block>Play!</Button>
         ) : (<></>)}
       </div>
     );

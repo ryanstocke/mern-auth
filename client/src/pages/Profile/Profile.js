@@ -43,6 +43,8 @@ class Profile extends Component {
                 {this.state.loggedIn ? (
                     <div className="profileBox">
                         <h1 id="userTitle">Welcome {this.state.user.username}</h1>
+                        <div className='landingPage'>PLACEHOLDER TEXT THAT CAN BE USED FOR IMAGE 
+                        CONTRAINER FOR CHARACTER SPRITES</div>
                     </div>
                 ) : (
                     <div className="noUser">

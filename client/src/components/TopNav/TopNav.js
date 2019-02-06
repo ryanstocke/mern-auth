@@ -61,7 +61,7 @@ export default class Navigation extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/"><i class="fab fa-fort-awesome light-text"></i></NavLink>
+                                <NavLink href="/"><i className="fab fa-fort-awesome light-text"></i></NavLink>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>

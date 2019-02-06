@@ -23,14 +23,15 @@
         font-size: 1.3em;
     }
 
-    .react-icon {
-        font-size: 1.3em;
-        -webkit-animation:spin 25s linear infinite;
-        -moz-animation:spin 25s linear infinite;
-        animation:spin 25s linear infinite;
-    }
-    .icon-ray:before {
-        content: "\e900";
+    // .react-icon {
+    //     font-size: 1.3em;
+    //     -webkit-animation:spin 25s linear infinite;
+    //     -moz-animation:spin 25s linear infinite;
+    //     animation:spin 25s linear infinite;
+    // }
+    .icon-ray {
+        
+        margin-top: -10px;
         -webkit-animation:spin 25s linear infinite;
         -moz-animation:spin 25s linear infinite;
         animation:spin 25s linear infinite;
