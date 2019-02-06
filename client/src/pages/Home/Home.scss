@@ -3,18 +3,27 @@
 .homeBox {
     background-color:rgba(0, 0, 0, 0.6);
     color:white;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-right: 20px;
     padding-left: 20px;
     margin: 0 auto;
-    margin-top: 30px;
-    width: 90%;
+    margin-top: 10px;
+    width: 65%;
     font-family: $text-font;
     text-shadow: 0px 0 darkslategrey, 0 1px darkslategrey, 0px 0 darkslategrey, 0 0px darkslategrey;
         #userTitle {
         font-family: $title-font;
         text-align: center;
+        
     }
+    .playBtn {
+        text-align: center;
+        color: white;
+    }
+    #homeAccount{
+        font-family: $title-font;
+        text-align: center;
+        }
     button {
         font-size: 1.3em;
         font-weight: bold;

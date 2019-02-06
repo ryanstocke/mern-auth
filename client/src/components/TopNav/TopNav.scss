@@ -17,10 +17,23 @@
 
     a.nav-link {
         font-size: 1.2em;
+        font-family: $title-font;
+        font-weight: bold;
+
     }
 
     .light-text {
         color: $light-text
+    }
+    .dropdown-menu {
+        font-weight: bold;
+        background: #5c5b5b;
+        box-shadow: 0 1px 2px $dark-text;
+        
+    }
+    .dropdown-menu:hover {
+        color: $dark-text;
+        font-weight: bold;
     }
 }
 

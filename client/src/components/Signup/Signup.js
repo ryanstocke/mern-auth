@@ -67,15 +67,15 @@ class Signup extends Component {
                 <Form>
                     <FormGroup>
                         <Label for="username">Username</Label>
-                        <Input type="text" name="username" id="username" placeholder="username" value={this.props.username} onChange={this.props.handleInputChange} valid={this.state.validUsername} />
+                        <Input type="text" name="username" id="username" placeholder="Username" value={this.props.username} onChange={this.props.handleInputChange} valid={this.state.validUsername} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input type="password" name="password" id="password" placeholder="password" value={this.props.password} onChange={this.props.handleInputChange} valid={this.state.validPassword} />
+                        <Input type="password" name="password" id="password" placeholder="Password" value={this.props.password} onChange={this.props.handleInputChange} valid={this.state.validPassword} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="confirmPassword">Confirm Password</Label>
-                        <Input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirm password" value={this.props.confirmPassword} onChange={this.props.handleInputChange} valid={this.state.confirmPassword} />
+                        <Input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" value={this.props.confirmPassword} onChange={this.props.handleInputChange} valid={this.state.confirmPassword} />
                         <FormText>At least 8 characters, including 1 capital & 1 number.</FormText>
                     </FormGroup>
                     {/* if all fields are valid, allow the user to submit the form */}

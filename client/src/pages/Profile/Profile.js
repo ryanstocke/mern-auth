@@ -53,8 +53,7 @@ class Profile extends Component {
                             <br></br>
                             <br></br>
                         </div>
-                        <Button color="danger" className="playBtn" size= "lg" href="/play" block>Play!</Button>
-                        <br></br>
+                        <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/">Play!</a></Button>                        <br></br>
                     </div>
                     
                 ) : (
@@ -63,7 +62,7 @@ class Profile extends Component {
                                 <>
                                     <h1>Please log in.</h1>
                                     <Link className="loginLink" to="/login"><Button className="loginBtn" color="info" block>Login</Button></Link>
-                               
+                               <br></br>
                                 </>
                             ) : (
                                     <img id="loadingIcon" src="./assets/images/loading.gif" alt="loading" />

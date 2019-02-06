@@ -3,6 +3,8 @@
 
 html, body {
     background: $background-color;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
     margin: 0;
     position: relative;

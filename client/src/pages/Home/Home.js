@@ -40,8 +40,10 @@ class Home extends Component {
           <img src={omhead1} className="sprite-bounce" alt="om"></img>
         </div>
         <br></br>
+        <h4 id="homeAccount">Sign up for an account and play!</h4>
         {this.state.loggedIn ? (
-          <Button color="danger" className="playBtn" size= "lg" href="/play" block>Play!</Button>
+
+          <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/">Play!</a></Button>
         ) : (<></>)}
         <br></br>
       </div>
