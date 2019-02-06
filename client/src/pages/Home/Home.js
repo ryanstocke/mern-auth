@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import API from "../../utils/API";
-
+import fzhead1 from '../../assets/images/fzhead1.png';
+import hghead1 from '../../assets/images/hghead1.png';
+import omhead1 from '../../assets/images/omhead1.png';
 import "./Home.scss";
 
 class Home extends Component {
@@ -31,10 +33,17 @@ class Home extends Component {
   render() {
     return (
       <div className="homeBox">
-        <div className='landingPage'>TEST</div>
+      <h1 id="userTitle">Medieval Zombies</h1>
+        <div className="spriteBox">
+          <img src={fzhead1} className="sprite-bounce" alt="fz"></img>
+          <img src={hghead1} className="sprite-bounce" alt="hg"></img>
+          <img src={omhead1} className="sprite-bounce" alt="om"></img>
+        </div>
+        <br></br>
         {this.state.loggedIn ? (
-          <Button color="success" href="/play" block>Play!</Button>
+          <Button color="danger" className="playBtn" size= "lg" href="/play" block>Play!</Button>
         ) : (<></>)}
+        <br></br>
       </div>
     );
   }

@@ -1,8 +1,11 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import "./Profile.scss";
 import { Button } from "reactstrap";
 import { Link } from "react-router-dom"
 import API from "../../utils/API"
+import fzhead1 from '../../assets/images/fzhead1.png';
+import hghead1 from '../../assets/images/hghead1.png';
+import omhead1 from '../../assets/images/omhead1.png';
 
 class Profile extends Component {
     state = {
@@ -30,11 +33,11 @@ class Profile extends Component {
     }
 
     loading() {
-        setTimeout(()=> {
+        setTimeout(() => {
             this.setState({
                 loading: false
             })
-        }, 1000)  
+        }, 1000)
     }
 
     render() {
@@ -43,21 +46,30 @@ class Profile extends Component {
                 {this.state.loggedIn ? (
                     <div className="profileBox">
                         <h1 id="userTitle">Welcome {this.state.user.username}</h1>
-                        <div className='landingPage'>PLACEHOLDER TEXT THAT CAN BE USED FOR IMAGE 
-                        CONTRAINER FOR CHARACTER SPRITES</div>
+                        <div className="spriteBox">
+                            <img src={fzhead1} className="sprite-bounce" alt="fz"></img>
+                            <img src={hghead1} className="sprite-bounce" alt="hg"></img>
+                            <img src={omhead1} className="sprite-bounce" alt="om"></img>
+                            <br></br>
+                            <br></br>
+                        </div>
+                        <Button color="danger" className="playBtn" size= "lg" href="/play" block>Play!</Button>
+                        <br></br>
                     </div>
+                    
                 ) : (
-                    <div className="noUser">
-                        {!this.state.loading ? (
-                            <>
-                                <h1>Please log in.</h1>
-                                <Link className="loginLink" to="/login"><Button className="loginBtn" color="info" block>Login</Button></Link>
-                            </>
-                        ) : (
-                            <img id="loadingIcon" src="./assets/images/loading.gif" alt="loading"/>
-                        )}
-                    </div> 
-                )}
+                        <div className="noUser">
+                            {!this.state.loading ? (
+                                <>
+                                    <h1>Please log in.</h1>
+                                    <Link className="loginLink" to="/login"><Button className="loginBtn" color="info" block>Login</Button></Link>
+                               
+                                </>
+                            ) : (
+                                    <img id="loadingIcon" src="./assets/images/loading.gif" alt="loading" />
+                                )}
+                        </div>
+                    )}
             </div>
         )
     }
