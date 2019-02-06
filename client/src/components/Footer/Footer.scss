@@ -8,7 +8,7 @@
     height: $footer-height;
     background: $primary-color;
     box-shadow: 1px 7px 3px 8px $dark-text;
-    font-family: $text-font;
+    font-family: $title-font;
     color: $light-text;
     p {
         line-height: $footer-height;
@@ -29,15 +29,14 @@
         -moz-animation:spin 25s linear infinite;
         animation:spin 25s linear infinite;
     }
-
-
+    .icon-ray:before {
+        content: "\e900";
+        -webkit-animation:spin 25s linear infinite;
+        -moz-animation:spin 25s linear infinite;
+        animation:spin 25s linear infinite;
+      }
 }
 
-// #reactLogo {
-//     -webkit-animation:spin 10s linear infinite;
-//     -moz-animation:spin 10s linear infinite;
-//     animation:spin 10s linear infinite;
-// }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
