@@ -43,7 +43,7 @@ class Home extends Component {
         <h4 id="homeAccount">Sign up for an account and play!</h4>
         {this.state.loggedIn ? (
 
-          <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/">Play!</a></Button>
+          <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/" style={{color: "white"}}>Play!</a></Button>
         ) : (<></>)}
         <br></br>
       </div>

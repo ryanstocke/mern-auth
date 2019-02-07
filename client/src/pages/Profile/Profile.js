@@ -53,7 +53,8 @@ class Profile extends Component {
                             <br></br>
                             <br></br>
                         </div>
-                        <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/">Play!</a></Button>                        <br></br>
+                        <Button color="danger" className="playBtn" block size= "lg"><a href="https://protected-sierra-25451.herokuapp.com/" style={{color: "white"}}>Play!</a></Button>
+                        <br></br>
                     </div>
                     
                 ) : (
